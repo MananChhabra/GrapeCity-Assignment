@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Tip Calculator!</h1>
+  <div id="container">
+    <div class="container-50">
+      <!-- left part -->
+      <div>
+        <!-- Total bill box.-->
+        <label>Bill :</label>
+        <br> <br>
+        <input type="text" placeholder="0.00$" min="0" id="totalBill">
+      </div>
+      <br>
+      <div>
+        <!-- Tip box.-->
+        <label>Tip % :</label>
+        <br>
+        <div class="input-group">
+          <input type="button" value="-" class="button-minus" data-field="quantity" onclick="subtract_tip()">
+          <input id="tipInput" placeholder="0%" type="number" step="1" max="" value="0" name="quantity"
+            class="quantity-field">
+          <input type="button" value="+" class="button-plus" data-field="quantity" onclick="add_tip()">
+        </div>
+      </div>
+      <div>
+        <!-- Split bill box.-->
+        <label>Number of people :</label>
+
+        <div class="input-group">
+          <input type="button" value="-" class="button-minus" data-field="quantity" onclick="subtract_person()">
+          <input id="tipSplit" type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+          <input type="button" value="+" class="button-plus" data-field="quantity" onclick="add_person()">
+        </div>
+      </div>
+
+
+    </div>
+    <div class="container-50">
+      <!-- right part -->
+      <div>
+        <span>
+          <label><b>Tip</b><br>(per person) : </label>
+        </span>
+        <span class="billOutput">
+          <span id="currencySign2">$</span>
+          <span id="tipAmount">0</span>
+        </span>
+      </div>
+      <br>
+      <div>
+        <span>
+          <label><b>Total</b><br>(per person) : </label>
+        </span>
+        <span class="billOutput">
+          <b>
+            <span id="currencySign1">$</span>
+            <span id="newBill">0</span>
+          </b>
+        </span>
+      </div>
+
+      <div class="calculate">
+        <button id="button">calculate</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.2em;
+  width: 100%;
+  margin: 1 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+#container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 90%;
+  display: inline-flex;
+  border: 2px solid #dbdbdb;
+  margin: 50px;
+}
+
+input[type="number"] {
+  font-size: 0.9em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  body {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  label,
+  input {
+    display: inline-block;
+    width: 40%;
+  }
+  div {
+    line-height: 2em;
+  }
+}
+
+.container-50 {
+  border: 1px solid #dbdbdb;
+  width: 50%;
+  padding: 15px 10px;
+}
+
+#totalBill {
+  font-size: 25px;
+  padding-left: 10px;
+  margin-left: 13px;
+  border: 2px solid #dddddd;
+  height: 40px;
+  width: 80.5%;
+  background-color: #ffffff;
+}
+
+.calculate {
+  margin: 15px 20px;
+}
+
+button {
+  padding: 9px 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 14px;
+  border: 2px solid #dddddd;
+}
+
+input,
+textarea {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-group {
+  clear: both;
+  margin: 15px 0;
+  position: relative;
+}
+
+.input-group input[type='button'] {
+  background-color: #eeeeee;
+  min-width: 38px;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+.input-group .button-minus,
+.input-group .button-plus {
+  font-weight: bold;
+  height: 38px;
+  width: 38px;
+  position: relative;
+}
+
+.input-group .quantity-field {
+  /* position: relative; */
+  height: 38px;
+  text-align: center;
+  width: 70%;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+.button-plus {
+  left: -3vh;
+}
+.button-minus {
+  right: -3vh;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.billOutput {
+  font-size: 3em;
+  align-items: center;
+  justify-content: center;
+}
